@@ -9,7 +9,7 @@ pipeline {
 	}
 
 	stages {
-		stage('PackageDocker') {
+		/*stage('PackageDocker') {
 			steps {
 				bat 'mvn -B -q -P docker-build clean package'
 			}
@@ -23,6 +23,6 @@ pipeline {
 			steps {
 				bat 'copy target\\ROOT.war D:\\devenv\\software\\' + params.DEPLOY_ENVIRONMENT + '\\apache-tomcat-9.0.96\\webapps'
 			}
-		}
+		}*/
 	}
 }
